@@ -32,6 +32,13 @@ test_x = test_x.drop(['Name', 'Ticket', 'Cabin'], axis=1)
 for c in ['Sex', 'Embarked']:
     # 学習データに基づいてどう変換するかを定める
     le = LabelEncoder()
+    """
+    
+    https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html
+    
+    "Encode target labels with value between 0 and n_classes-1."
+    
+    """
     le.fit(train_x[c].fillna('NA'))
 
     # 学習データ、テストデータを変換する
@@ -45,6 +52,13 @@ from xgboost import XGBClassifier
 
 # モデルの作成および学習データを与えての学習
 model = XGBClassifier(n_estimators=20, random_state=71)
+"""
+ref : https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBClassifier
+
+ref : https://amalog.hateblo.jp/entry/hyper-parameter-search
+『なぜn_estimatorsやepochsをパラメータサーチしてはいけないのか』
+
+"""
 model.fit(train_x, train_y)
 
 # テストデータの予測値を確率で出力する
