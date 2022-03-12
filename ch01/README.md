@@ -1,4 +1,4 @@
-# Chapter 01 _ 
+# Chapter 01
 
 - [Kaggle API](https://github.com/Kaggle/kaggle-api).
   - It is used when you want to access kaggle function.
