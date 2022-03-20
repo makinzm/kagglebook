@@ -7,6 +7,8 @@
 
 - Recommendation
   - [Santander Product Recommendation](https://www.kaggle.com/c/santander-product-recommendation)
+  - [Pythonではじめての簡易レコメンドエンジン開発](https://qiita.com/Papillon6814/items/623766f531725acceff7)
+  - [【Python KNN】協調フィルタリングで映画レコメンド(推薦)【MovieLens】](https://dse-souken.com/2021/03/25/ai-20/#i-4)
 
 - Time-Series
   - [時系列解析の基礎 -Time Series Basics-](https://www.kaggle.com/anguillajaponica/time-series-basics)
